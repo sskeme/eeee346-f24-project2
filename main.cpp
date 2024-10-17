@@ -1,8 +1,5 @@
-#include <iostream>
 #include <fstream> // for filewrite
 #include "Matrix.h"
-
-using namespace std;
 
 const int BAR_WIDTH = 40;
 
