@@ -1,1 +1,2 @@
-# eeee346-f24-project2
+# Instructions
+Please see the attached PDF file (EEEE346-Project2-Instructions-F24.pdf).
