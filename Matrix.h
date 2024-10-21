@@ -6,12 +6,6 @@
 using namespace std;
 
 class Matrix {
-  // custom << (output) operator
-  friend ostream& operator<<(ostream&, const Matrix&); 
-
-  // custom >> (input) operator
-  friend istream& operator>>(istream&, Matrix&);
-
 public:
   // constructor: dynamically allocates memory for a matrix
   Matrix(int rows, int cols);
@@ -36,6 +30,12 @@ public:
 
   // custom * operator for matrix multiplication
   Matrix operator*(const Matrix&);
+
+  // custom << (output) operator
+  friend ostream& operator<<(ostream&, const Matrix&); 
+
+  // custom >> (input) operator
+  friend istream& operator>>(istream&, Matrix&);
 
 private:
   double **data; // a double pointer to create a 2D array (matrix) and point to it
