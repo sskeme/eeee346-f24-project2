@@ -17,17 +17,6 @@ Matrix::~Matrix() {
   // TODO: deallocate the 2D dynamic array (matrix)
 }
 
-ostream& operator<<(ostream& output, const Matrix& mat) {
-  output.precision(mat.OUTPUT_PRECISION);
-  
-  // TODO: output the element values of the parameter mat
-}
-
- 
-istream& operator>>(istream& input, Matrix& mat) {
-  // TODO: receive and store element values of the parameter mat
-}
-
 Matrix Matrix::operator+(const Matrix& mat) {
   // matrix dimension check using assert()
   // assert that the rows and cols must be matched
@@ -59,4 +48,14 @@ Matrix Matrix::operator*(const Matrix& mat) {
   // TODO: matrix dimension check using assert() (what is needed?)
 	
   // TODO: perform matrix multiplication
+}
+
+ostream& operator<<(ostream& output, const Matrix& mat) {
+  output.precision(mat.OUTPUT_PRECISION);
+  
+  // TODO: output the element values of the parameter mat
+}
+
+istream& operator>>(istream& input, Matrix& mat) {
+  // TODO: receive and store element values of the parameter mat
 }
