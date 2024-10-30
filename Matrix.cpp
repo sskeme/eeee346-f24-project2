@@ -21,7 +21,7 @@ Matrix Matrix::operator+(const Matrix& mat) {
   // matrix dimension check using assert()
   // assert that the rows and cols must be matched
   // otherwise, the program terminates and an error message is printed
-	assert( (this->rows == mat.rows) && (this->cols == mat.cols) );
+  assert( (this->rows == mat.rows) && (this->cols == mat.cols) );
 
   // TODO: perform matrix addition
 }
